@@ -1,0 +1,101 @@
+.dropdown{
+
+    .dropdown-btn{
+        padding: 0.25rem 1.75rem 0.25rem 0.625rem;
+        background-color: transparent;
+        border: 0;
+        position: relative;
+        text-align: left;
+        span{
+            color: #d7d7d9;
+            font-size: 0.75rem;
+        }
+        .dropdown-btn-arrow{
+            position: absolute;
+            right: 0.625rem;
+            top: 50%;
+            width: 0.25rem;
+            height: 0.25rem;
+            border-color:  transparent transparent #d7d7d9 transparent;
+            border-width:  0 0.25rem 0.25rem 0.25rem;
+            border-style: solid;
+            transform: rotate(90deg);
+            transition: all 0.3s;
+        }   
+    }
+         
+    .dropdown-btn{
+        &.panel{
+            width: 100%;
+        }
+        &.float i{
+            transform: rotate(180deg);
+        }
+        &:hover{
+            background-color: #45454c;
+            span{
+                color: #fff;
+            }
+            i{
+                border-color:  transparent transparent #fff transparent;
+                
+            }
+            
+        }
+        &.active{
+            i{
+                transform: rotate(180deg);
+            }
+            &.float i{
+                transform: rotate(0deg);
+            }
+        }
+    }
+    .dropdown-panel{
+        overflow: hidden;
+        &.scrollY{
+            overflow-y: auto;
+        }
+        &.scrollX{
+            overflow-x: auto;
+        }
+        
+        &.transition-enter{
+            height: 0;
+            transition: height 0.3s;
+        }
+        &.transition-leave{
+            transition: height 0.3s;
+            
+            height: 0 !important;
+        }
+    }
+    .dropdown-float{
+        z-index: 100;
+        &.scrollY{
+            overflow-y: auto;
+        }
+        &.scrollX{
+            overflow-x: auto;
+        }
+        &.active{
+            position: absolute;
+        }
+        
+        &.transition-enter{
+            height: 0;
+            transition: height 0.3s;
+            overflow: hidden;
+        }
+        &.transition-leave{
+            height: 0 !important;
+            transition: height 0.3s;
+            overflow: hidden;
+        }
+    }
+    ul{
+        list-style-type: none;
+        padding: 0.5rem 0;
+        margin: 0;
+    }
+}

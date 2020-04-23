@@ -1,0 +1,86 @@
+.aside{
+    background-color: #3c3c44;
+    .aside-card{
+        border: 0;
+        width: 18.75rem;
+        &.transition-enter{
+            overflow: hidden;
+            transition: all 0.3s;
+            width: 0;
+            & > div{
+                width: 18.75rem;
+            }
+        }
+        &.transition-enter-active{
+            width: 18.75rem;
+        }
+        &.transition-leave{
+            overflow: hidden;
+            transition: all 0.3s;
+            width: 18.75rem;
+            & > div{
+                width: 18.75rem;
+            }
+        }
+        &.transition-leave-active{
+            width: 0;
+        }
+        
+    }
+    .aside-card-header{
+        padding: 0.5rem 0.625rem;
+        background-color: #3c3c44;
+        color: #fff;
+        font-size: 0.75rem;
+        position: relative;
+        button{
+            display: block;
+            position: absolute;
+            right: 0.5rem;
+            top: 50%;
+            transform: translateY(-50%) rotate(180deg);
+            border: 0;
+            background-color: transparent;
+            color: #ababae;
+            padding-right: 0;
+            &:hover{
+                color: #fff;
+            }
+            svg{
+                display: block;
+                width: 0.5rem;
+            }
+            i{
+                display: block;
+                line-height: 1rem;
+                width: 0.5rem;
+            }
+        }
+    }
+    .aside-card-panel{
+        background-color: #3c3c44;
+        position: relative;
+        overflow-y: auto;
+        overflow-x: visible;
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+    }
+    .aside-card-panel-scroll{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .dropdown{
+        margin: 0.25rem 0.625rem;
+    }
+    .dropdown-panel-scroll{
+        background-color: #2e2f34;
+        border: 1px solid #1a1a1c;
+        padding: 0.5rem 0.625rem;
+        color: #ababae;
+        font-size: 0.75rem
+    }
+}

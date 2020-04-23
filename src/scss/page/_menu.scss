@@ -1,0 +1,213 @@
+.menubar{
+    .menubar-tab{
+        width: 4rem;
+        background-color: #2e2f34;
+    }
+    .menubar-tab-panel{
+        position: relative;
+        overflow-y: auto;
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+    }
+    .menubar-tab-panel-scroll{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-right: 1px solid #1a1a1a;
+    }
+    // .menubar-tab-panel-scroll-top{
+    // }
+    // .menubar-tab-panel-scroll-bottom{
+    // }
+    .menubar-tab-panel-scroll-btn{
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: transparent solid 1px;
+            color: #ababae;
+            width: 4rem;
+            height: 4rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            
+            &.active{
+                color: #d7d7d9;
+                border-top: #1a1a1c solid 1px;
+                border-bottom: #1a1a1c solid 1px;
+                background-color: #3c3c44;
+                &:first-of-type{
+                    border-top: transparent solid 1px;
+                }
+            }
+            &:hover{
+                color: #fff;
+            }
+            svg{
+                display: block;
+                width: 2rem;
+                height: 2rem;
+            }
+            i{
+                display: block;
+                line-height: 2rem;
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+
+    .menubar-content{
+        width: 16rem;
+        background-color: #3c3c44;
+    }
+    // .menubar-content-panel{
+    // }
+    .menubar-content-panel-header{
+        font-size: 0.75rem;
+        color: #fff;
+        position: relative;
+    }
+    .menubar-content-panel-header-icon{
+        display: block;
+        position: absolute;
+        right: 0.25rem;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 0;
+        background-color: transparent;
+        color: #ababae;
+        padding-right: 0;
+        &:hover{
+            color: #fff;
+        }
+        svg{
+            display: block;
+            width: 0.5rem;
+        }
+        i{
+            display: block;
+            line-height: 1rem;
+            width: 0.5rem;
+        }
+    }
+    .menubar-content-panel-card-header-search{
+        font-size: 0.75rem;
+        color: #3ea8de;
+        background-color: transparent;
+        border: 0;
+        line-height: 2rem;
+        height: 2rem;
+        padding-left: 0.5rem;
+        padding-right: 2rem;
+        width: 100%;
+        &::placeholder{
+            color: #51535b;
+        }
+    }
+    .menubar-content-panel-card-header-search-icon{
+        display: block;
+        position: absolute;
+        right: 0.25rem;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 0;
+        background-color: transparent;
+        color: #ababae;
+        &:hover{
+            color: #fff;
+        }
+        svg{
+            display: block;
+            width: 1rem;
+            height: 1rem;
+        }
+        i{
+            display: block;
+            line-height: 1rem;
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+    .menubar-content-panel-card{
+        background-color: #2E2F34;
+        border-color: #1a1a1c;
+    }
+    .menubar-content-panel-card-header{
+        position: relative;
+        background-color: #2E2F34;
+        border-color: #1a1a1c;
+    }
+    .menubar-content-panel-card-body{
+        position: relative;
+        overflow-y: auto;
+        overflow-x: visible;
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+    }
+    .menubar-content-panel-card-body-panel{
+        position: relative;
+        overflow-y: auto;
+        overflow-x: visible;
+        &::-webkit-scrollbar{
+            background-color: #1a1a1c;
+        }
+    }
+    .menubar-content-panel-card-body-panel-scroll{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .menubar-content-panel-card-footer{
+        background-color: #2E2F34;
+        border-color: #1a1a1c;
+
+        .divider{
+            height: 1rem;
+
+            span{
+                display: block;
+                background-color: #1a1a1c;
+                width: 0.0625rem;
+                height: 100%;
+            }
+        }
+    }
+    .menubar-content-panel-card-footer-icon{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: #ababae;
+        &:hover{
+            color: #fff;
+        }
+        svg{
+            display: block;
+            width: 1rem;
+            height: 1rem;
+        }
+        i{
+            display: block;
+            line-height: 1rem;
+            width: 1rem;
+            height: 1rem;
+        }
+        
+    }
+
+    
+}

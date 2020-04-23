@@ -1,0 +1,45 @@
+//*************
+// mediaSize **
+//*************
+
+$mediaSize-MP:(
+    "xxs":350px,
+    "xs": 400px,
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px,
+    "xxl": 1600px
+)!default;
+
+$mediaSize-PC:(
+    "xxl":1600px,
+    "xl": 1200px,
+    "lg": 992px,
+    "md": 768px,
+    "sm": 576px,
+    "xs": 400px,
+    "xxs":350px
+)!default;
+
+$mediaSizeRange:(
+    "xxl": (1600px,9999px),
+    "xl":  (1200px,1600px),
+    "lg":  (992px,1200px),
+    "md":  (768px,992px),
+    "sm":  (576px,768px),
+    "xs":  (400px,576px),
+    "xxs": (0px,400px)
+) !default;
+
+//**********
+// @media **
+//**********
+
+$xxl: 1600px!default;
+$xl: 1200px!default;
+$lg: 992px!default;
+$md: 768px!default;
+$sm: 576px!default;
+$xs: 400px!default;
+$xxs:350px!default;

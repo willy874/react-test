@@ -1,0 +1,22 @@
+//**********
+// @media **
+//**********
+
+@mixin media-min($media) {
+    @media (min-width: $media) {
+        @content;
+    }
+}
+
+@mixin media-max($media) {
+    @media (max-width: $media) {
+        @content;
+    }
+}
+
+//map-get($linkColor, dark);
+@mixin media-range($minMedia, $maxMedia) {
+    @media (min-width:$minMedia) and (max-width:$maxMedia) {
+        @content;
+    }
+}

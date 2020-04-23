@@ -1,0 +1,173 @@
+.header{
+    height: 4rem;
+    border-bottom: 1px solid #1a1a1c;
+    background-color: #2e2f34;
+
+    .header-brand{
+        background-color: #3ea8de;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+        svg{
+            height: 100%;
+            display: block;
+        }
+    }
+    .header-title{
+        h1{
+            font-size: 1.15rem;
+            color: #fff;
+            margin-bottom: 0;
+        }
+        h2{
+            font-size: 0.75rem;
+            color: #b2b2ba;
+            margin-bottom: 0;
+        }
+        
+    }
+    .header-toolbar-diagrambar,.header-menu{
+        .dropdown{
+            &.disabled{
+                button{
+                    pointer-events: none;
+                    opacity: 0.2;
+                }
+            }
+            ul{
+                list-style-type: none;
+                background-color: #3c3c44;
+                border: 1px solid #1a1a1a;
+                padding: 0;
+                li{
+                    padding: 0.125rem 0.75rem;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #585960;
+                    }
+                }
+                a{
+                    color: #fff;
+                    font-size: 0.75rem;
+                }
+            }
+        }
+        
+        button{
+            background-color: transparent;
+            margin: 0;
+            border: 0;
+            color: #ababae;
+            position: relative;
+
+            &:hover{
+                color: #fff;
+            }
+            &.active{
+                color: #3ea8de;
+            }
+            svg{
+                display: block;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            i{
+                display: block;
+                line-height: 1.5rem;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            &.dropdown{
+                padding-right: 1.5rem;
+                // &::after {
+                //     content: '';
+                //     position: absolute;
+                //     right: 0;
+                //     top: 50%;
+                //     transform: translateY(-50%);
+                //     display: block;
+                //     border-top: 4px dashed;
+                //     border-top: 4px solid\9;
+                //     border-right: 4px solid transparent;
+                //     border-left: 4px solid transparent;
+                // }
+            }
+            &.dropdown-box{
+                background-color: #4f4f57;
+                padding: 0.125rem 0.5rem;
+                padding-right: 1.25rem;
+                margin-right: 0.25rem; 
+                span{
+                    font-size: 0.75rem;
+                    line-height: 0.75rem;
+                }
+                &:hover{
+                    color: #fff;
+                    background-color: #585960;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: 0.5rem;
+                    top: 50%;
+                    display: block;
+                    border-top: 4px dashed;
+                    border-top: 4px solid\9;
+                    border-right: 4px solid transparent;
+                    border-left: 4px solid transparent;
+                }
+             }
+        }
+        .divider{
+            height: 2.25rem;
+
+            span{
+                display: block;
+                background-color: #1a1a1c;
+                width: 0.0625rem;
+                height: 100%;
+            }
+        }
+    }
+    .header-asidebtn{
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: transparent solid 1px;
+            color: #ababae;
+            width: 4rem;
+            height: 4rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            
+            &.active{
+                color: #d7d7d9;
+                border-left: #1a1a1c solid 1px;
+                background-color: #3c3c44;
+            }
+            &:hover{
+                color: #fff;
+            }
+
+            svg{
+                display: block;
+                width: 2rem;
+                height: 2rem;
+            }
+            i{
+                display: block;
+                line-height: 2rem;
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+}
