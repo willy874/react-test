@@ -2,7 +2,7 @@ import React,{Component} from 'react'
 import { Provider } from 'react-redux'
 import store from './redux/store'
 import cn from 'classnames'
-import {Header,Menu,Aside} from './pages'
+import {Header,Menu,Aside,DataFlowPage} from './pages'
 
 export default class App extends Component {
     render(){
@@ -20,11 +20,7 @@ export default class App extends Component {
                 <Header/>
                 <main className={cn('flex-grow-1 d-flex')}>
                     <Menu/>
-                    <div className={cn('flex-grow-1','content-wrapper')}>
-                        <div className={cn('d-flex flex-column','page-wrapper')}>
-                            <div className={cn('flex-grow-1','page-wrapper-main')}></div>
-                        </div>
-                    </div>
+                    <DataFlowPage/>
                     <Aside/>
                 </main>
             </div>

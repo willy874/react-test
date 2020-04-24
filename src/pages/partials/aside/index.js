@@ -25,8 +25,8 @@ class Aside extends Component {
     render(){
         return <CSSTransitionGroup component="aside"
             transitionName="transition"
-            transitionEnterTimeout={310}
-            transitionLeaveTimeout={310}
+            transitionEnterTimeout={316}
+            transitionLeaveTimeout={316}
             className={cn('d-flex flex-column flex-shrink-0','aside')}>
             {(this.props.rightAside)?
             <div className={cn('card flex-grow-1','aside-card')}>

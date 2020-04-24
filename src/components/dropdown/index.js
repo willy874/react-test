@@ -10,7 +10,6 @@ import { CSSTransitionGroup } from 'react-transition-group'
 class Dropdown extends Component {
     constructor(props) {
         super(props)
-        console.log('this.props',this.props)
         this.state = { 
             dropdownActive: false
         }
@@ -56,8 +55,8 @@ class Dropdown extends Component {
             </button>
             <CSSTransitionGroup
                 transitionName="transition"
-                transitionEnterTimeout={310}
-                transitionLeaveTimeout={310}
+                transitionEnterTimeout={316}
+                transitionLeaveTimeout={316}
                 component="div">
                 
                 {(type === 'float' && this.state.dropdownActive)?

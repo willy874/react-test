@@ -9,7 +9,7 @@ const reducer = (state = {}, action) => {
         case 'leftAside':
             return Object.assign({}, state, {
                 leftAside: action.leftAside || '',
-                //rightAsideComponent: action.rightAsideComponent || ''
+                //leftAsideComponent: action.rightAsideComponent || ''
             })
         case 'mainTabs':
             return Object.assign({}, state, {

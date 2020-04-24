@@ -12,7 +12,7 @@ class Float extends Component {
         const panelHeight = dom && dom.clientHeight
         setTimeout(() => {
             dom.style.height = `${panelHeight}px` 
-        }, 10);
+        }, 16);
     }
     render(){
         return <div className={cn('dropdown-float',{

@@ -8461,6 +8461,36 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #3c3c44;
 }
 
+.menubar .menubar-content.transition-enter {
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0;
+}
+
+.menubar .menubar-content.transition-enter > div {
+  width: 18.75rem;
+}
+
+.menubar .menubar-content.transition-enter-active {
+  width: 18.75rem;
+}
+
+.menubar .menubar-content.transition-leave {
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 18.75rem;
+}
+
+.menubar .menubar-content.transition-leave > div {
+  width: 18.75rem;
+}
+
+.menubar .menubar-content.transition-leave-active {
+  width: 0;
+}
+
 .menubar .menubar-content-panel-header {
   font-size: 0.75rem;
   color: #fff;
@@ -8644,6 +8674,7 @@ a.text-dark:hover, a.text-dark:focus {
   bottom: 0;
   padding-bottom: 0.5rem;
   padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .page-wrapper-main {
