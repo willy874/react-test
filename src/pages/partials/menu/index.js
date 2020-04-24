@@ -100,11 +100,11 @@ class Menu extends Component {
                         </div>
                     </div>
                 </div>
-                <CSSTransitionGroup component="aside"
+                <CSSTransitionGroup component="div"
                 transitionName="transition"
-                transitionEnterTimeout={310}
-                transitionLeaveTimeout={310}
-                className={cn('d-flex','aside')}>
+                transitionEnterTimeout={316}
+                transitionLeaveTimeout={316}
+                className={cn('d-flex')}>
                 {(this.state.leftAside)?
                     <div className={cn('d-flex pl-2 pb-2','menubar-content')}>
                         <div className={cn('w-100 d-flex flex-column','menubar-content-panel')}>

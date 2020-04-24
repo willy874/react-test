@@ -75,23 +75,25 @@
             overflow: hidden;
             transition: all 0.3s;
             width: 0;
+            padding: 0;
             & > div{
-                width: 18.75rem;
+                width: 16rem;;
             }
         }
         &.transition-enter-active{
-            width: 18.75rem;
+            width: 16rem;
         }
         &.transition-leave{
             overflow: hidden;
             transition: all 0.3s;
-            width: 18.75rem;
+            width: 16rem;
             & > div{
-                width: 18.75rem;
+                width: 16rem;
             }
         }
         &.transition-leave-active{
             width: 0;
+            padding: 0;
         }
     }
     // .menubar-content-panel{

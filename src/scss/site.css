@@ -8466,29 +8466,31 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   width: 0;
+  padding: 0;
 }
 
 .menubar .menubar-content.transition-enter > div {
-  width: 18.75rem;
+  width: 16rem;
 }
 
 .menubar .menubar-content.transition-enter-active {
-  width: 18.75rem;
+  width: 16rem;
 }
 
 .menubar .menubar-content.transition-leave {
   overflow: hidden;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  width: 18.75rem;
+  width: 16rem;
 }
 
 .menubar .menubar-content.transition-leave > div {
-  width: 18.75rem;
+  width: 16rem;
 }
 
 .menubar .menubar-content.transition-leave-active {
   width: 0;
+  padding: 0;
 }
 
 .menubar .menubar-content-panel-header {
